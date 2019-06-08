@@ -1,0 +1,1 @@
+cat /etc/passwd | grep -v "#" | cut -d ":" -f1 -f3 -f6

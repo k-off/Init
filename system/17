@@ -1,0 +1,7 @@
+#install ssh-server:
+#sudo apt-get update
+#sudo apt-get install openssh-server
+#sudo apt-get install net-tools
+#sudo service ssh start
+#command: ssh -p <port> user@<ip-address-or-hostname>
+ssh -p 3022 user@localhost

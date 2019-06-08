@@ -1,0 +1,6 @@
+#Update apt package manager
+sudo apt update
+#install OpenSSH-Server
+sudo apt install openssh-server
+#get status of ssh-server
+sudo systemctl status ssh

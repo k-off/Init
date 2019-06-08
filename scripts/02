@@ -1,0 +1,11 @@
+echo 'Enter a username to delete'
+read name_to_find
+name=$(who | grep "$name_to_find " | cut -d ' ' -f 1)
+len=${#name}
+if [ "$len" -gt 0 ]; then
+	sudo killall -u $name
+	sudo userdel -rf $name
+	echo "USER DELETED"
+else
+	echo "USER NOT ACTIVE"
+fi
